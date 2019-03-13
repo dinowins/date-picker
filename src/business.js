@@ -6,7 +6,7 @@
 //   }
 // }
 
-export function getYearDiff(year) {
+/* export function getYearDiff(year) {
   const anchorYear = 2000;
   const inputYear = year;
 
@@ -43,6 +43,8 @@ export function countDaysDiff(diff, boolean){
   return daysBetween;
 }
 
+// countDaysDiff gets the amount of days for the years up to user input year
+
 export function findDay(input) {
   let date = input.toLowercase;
   const dayOfDate = "wednesday"
@@ -53,3 +55,12 @@ export function findDay(input) {
   }
   return date;
 }
+*/
+
+// export class Date {
+//   constructor(year, month, day) {
+//     this.month = (month);
+//     this.day = parseInt(day);
+//     this.year = parseInt(year);
+//   }
+// }

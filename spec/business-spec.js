@@ -1,4 +1,4 @@
-import { findDay, getYearDiff, countDaysDiff } from "./../src/date-picker.js"
+// import {  } from "./../src/business.js"
 
 
 
@@ -7,7 +7,7 @@ import { findDay, getYearDiff, countDaysDiff } from "./../src/date-picker.js"
 //
 //   })
 // });
-describe('countDaysDiff', function() {
+/* describe('countDaysDiff', function() {
   it('should test the amount of days in betweens years', function() {
     expect(countDaysDiff(5, true)).toEqual(1827);
     expect(countDaysDiff(5, false)).toEqual(1461);
@@ -20,7 +20,7 @@ describe('findDay', function () {
     const dayOfDate = "Wednesday";
     expect(dayOfDate).toEqual('Wednesday');
   });
-});
+}); */
 
 // describe('getYearDiff', function(){
 //   it("should return the amount of years in between anchorYear and inputYear", function(){
