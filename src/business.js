@@ -6,6 +6,13 @@
 //   }
 // }
 
+
+export function numToDays(day){
+  const daysArray = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const translate = daysArray.slice(day, (day+1));
+  return translate;
+}
+
 /* export function getYearDiff(year) {
   const anchorYear = 2000;
   const inputYear = year;
