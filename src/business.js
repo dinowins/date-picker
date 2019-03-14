@@ -6,12 +6,27 @@
 //   }
 // }
 
+export function buildDate(year, month, day){
+  if (day > 31 || year < 0 || day <= 0) {
+    return "invalid date"
+  } else {
+      const userDate = new Date(year, month, day);
+      const weekday = userDate.getDay();
+      const result = numToDays(weekday);
+      return result;
+  }
+}
+
 
 export function numToDays(day){
   const daysArray = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   const translate = daysArray.slice(day, (day+1));
   return translate;
 }
+
+// if (userDay > 31) {
+//   $("#result").text("Input a correct day");
+// }
 
 /* export function getYearDiff(year) {
   const anchorYear = 2000;

@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './sass/styles.scss';
-import { numToDays } from './../src/business.js'
+import { buildDate } from './../src/business.js'
 
 
 $(document).ready(function(){
@@ -11,10 +11,7 @@ $(document).ready(function(){
     const userMonth = $(".month").val();
     const userDay = $(".day").val();
     const userYear = $(".year").val();
-
-    const userDate = new Date(userYear, userMonth, userDay);
-    let day = userDate.getDay();
-    let translate = numToDays(day);
+    const translate = buildDate(userYear, userMonth, userDay);
     $("#result").text(translate);
   });
 });
